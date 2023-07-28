@@ -6,7 +6,7 @@
   desenvolvimento de softwate.
 </p>
 
-### Linguagens e Ferramentas
+#### Linguagens e Ferramentas
 
 <p div=auto>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width=30px />
