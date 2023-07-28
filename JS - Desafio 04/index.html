@@ -15,30 +15,24 @@
     <div class="wrapper">
         <section>
             <label>Converter de
-                <select name="convertFrom">
-                    <option value="1" selected>R$ Real Brasileiro</option>
-                    <option value="2">US$ Dólar Americano</option>
-                </select>
+                <select id="convertFrom"></select>
             </label>
             <label>Converter para
-                <select name="convertTo">
-                    <option value="1" selected>R$ Real Brasileiro</option>
-                    <option value="2">US$ Dólar Americano</option>
-                </select>
+                <select id="convertTo"></select>
             </label>
             <label>Valor <input type="number" name="value"></label>
             <button>Converter</button>
 
             <div class="resultConvertion">
                 <img id="imgConvertFrom" src="./img/real.png">
-                <strong class="textCoin">Real</strong>
-                <strong class="textValue">R$ 10.000,00</strong>
+                <strong id="textCoinFrom" class="textCoin">Real</strong>
+                <strong id="valueCoinFrom" class="textValue">R$ 0,00</strong>
 
                 <img class="downArrow" src="./img/seta.png">
 
                 <img id="imgConvertTo" src="./img/dolar.png">
-                <strong class="textCoin">Dólar Americano</strong>
-                <strong class="textValue">US$ 2.000,00</strong>
+                <strong id="textCoinTo" class="textCoin">Dolar</strong>
+                <strong id="valueCoinTo" class="textValue">US$ 0,00</strong>
 
             </div>
         </section>
