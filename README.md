@@ -25,3 +25,19 @@ Os desafios de CSS incluem o desenvolvimento de 3 projetos basico usando apenas 
 - <a href="https://github.com/dionialves/DevClub/tree/main/CSS%20-%20Desafio%2003">CSS - Desafio 03</a>
 
 <p>No desafio 03 apliquei a responsividade, garantindo um layout correto para tela de computador, tablet e celular.</p>
+
+### Desafio JS
+
+<p>
+Os desafio em JavaScript serão mostrados nessa sessão, pode ser que alguns desses projetos sejam separados em repositórios, devido a sua complexidade. Abaixo vou listar cada projeto com um breve resumo do mesmo.
+</p>
+
+#### <a href="https://github.com/dionialves/DevClub/tree/main/CSS%20-%20Desafio%2003">JS - Desafio 04</a>
+
+<p>
+Neste projeto, criamos uma pequena aplicação com Java Script, para a conversão de moedas, apliquei conhecimentos como function, objetcs e a manipulação de elementos HTML via JavaScript.
+</p>
+
+
+
+
