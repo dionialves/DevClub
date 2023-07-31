@@ -13,40 +13,48 @@ const valueCoinTo = document.getElementById("valueCoinTo");
 let oldValueInSelectFrom = 0;
 let oldValueInSelectTo = 1;
 
+// mudar select para texto
+//
+
 const coin = {
-    real: {
-        code: "R$",
-        name: "Real Brasileiro",
-        shortName: "Real",
-        pathImage: "./img/real.png",
-        conversionRate: 4.73
-    },
     dolar: {
         code: "US$",
         name: "Dolar Americano",
-        shortName: "Dolar",
         pathImage: "./img/dolar.png",
+        languageCode: 'en-US',
+        currency: 'USD',
         conversionRate: 1
+    },
+    real: {
+        code: "R$",
+        name: "Real Brasileiro",
+        pathImage: "./img/real.png",
+        languageCode: 'pt-BR',
+        currency: 'BRL',
+        conversionRate: 4.75
     },
     euro: {
         code: "€",
         name: "Euro",
-        shortName: "Euro",
         pathImage: "./img/euro.png",
+        languageCode: 'en-GB',
+        currency: 'GBP',
         conversionRate: 0.91
     },
     libra: {
         code: "£",
-        name: "Libra",
-        shortName: "Libra Esterlina",
+        name: "Libra Esterlinara",
         pathImage: "./img/libra.png",
+        languageCode: 'en-GB',
+        currency: 'GBP',
         conversionRate: 0.78
     },
     bitcoin: {
         code: "₿",
         name: "Bitcon",
-        shortName: "Bitcoin",
         pathImage: "./img/bitcoin.png",
+        languageCode: 'en-US',
+        currency: 'BTC',
         conversionRate: 0.000034
     }
 };
@@ -57,12 +65,10 @@ const listOfCoins = Object.keys(coin);
 const listOfOptions = createListOfCoins(listOfCoins);
 const listImage = createListImageOfCoins(listOfCoins);
 
-addOptions(listOfOptions, convertFrom, 0);
-addOptions(listOfOptions, convertTo, 1);
+addOptionsSelect(listOfOptions, convertFrom, 1);
+addOptionsSelect(listOfOptions, convertTo, 0);
 
-convertFrom.addEventListener('change', changeValueFrom);
-convertTo.addEventListener('change', changeValueTo);
-buttonConverter.addEventListener('click', convertCoin);
+
 
 function createListOfCoins(CoinsInObjects){
 
@@ -84,7 +90,7 @@ function createListImageOfCoins(CoinsInObjects){
     return list;
 };
 
-function addOptions(list, select, initialValue){
+function addOptionsSelect(list, select, initialValue){
 
     for (let i=0; i < list.length; i++) {
     
@@ -93,8 +99,8 @@ function addOptions(list, select, initialValue){
         option.text = list[i];
     
         select.appendChild(option);
-        select.value = initialValue;
     };
+    select.value = initialValue;
 };
 
 function changeValueFrom(){
@@ -136,11 +142,23 @@ function updateResultConvertion(){
 };
 
 function convertCoin (){
-    console.log(value.value)
-    console.log(coin[listOfCoins[convertFrom.selectedIndex]].conversionRate)
 
+    result =  coin[listOfCoins[0]].conversionRate / coin[listOfCoins[convertFrom.selectedIndex]].conversionRate;
+    result = result * coin[listOfCoins[convertTo.selectedIndex]].conversionRate;
 
-    result =  coin[listOfCoins[convertTo.selectedIndex]].conversionRate / coin[listOfCoins[convertFrom.selectedIndex]].conversionRate
-    result = result * value.value
-    console.log(result.toFixed(2))
+    valueCoinFrom.textContent =  new Intl.NumberFormat(coin[listOfCoins[convertFrom.selectedIndex]].languageCode, {
+        style: "currency",
+        currency: coin[listOfCoins[convertFrom.selectedIndex]].currency
+      }).format(value.value);
+
+    
+    valueCoinTo.textContent = new Intl.NumberFormat(coin[listOfCoins[convertTo.selectedIndex]].languageCode, {
+        style: "currency",
+        currency: coin[listOfCoins[convertTo.selectedIndex]].currency
+      }).format(result * value.value)
+
 }
+
+convertFrom.addEventListener('change', changeValueFrom);
+convertTo.addEventListener('change', changeValueTo);
+buttonConverter.addEventListener('click', convertCoin);
