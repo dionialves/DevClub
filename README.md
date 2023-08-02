@@ -44,6 +44,19 @@ Neste projeto, criamos uma pequena aplicação com Java Script, para a conversã
 Para este projeto usei alguns recursos da biblioteca Math do JavaScript para formular um numero ramdomico e retornar ao cliente.
 </p>
 
+#### <a href="https://github.com/dionialves/DevClub/tree/main/JS%20-%20Desafio%2006">JS - Desafio 06 - Pesquisa de Contato</a>
+
+<p>
+Nesta simples aplicação é composta de um input e um button, onde faço a pesquisa em uma lista de objects, e retorno uma mensagem na tela. Tive o cuidado
+de fazer algumas verificações, como palavras com caixa alta e espaços em brancos no inicio da palavra e no final, coisas simples, mas que fazem todas a diferença.
+</p>
+<p>
+Como toda boa linguagem de programação, o JavaScript possui boas opções de laços de repetição, neste projeto tive a oportunidade de testar vários
+laços como, <b>For, For of, For in, while, do while</b> e <b>forEach</b>. Mas para esse projeto observei que a melhor opção seria o <b>for of</b>,
+pois percoria facilmente uma lista contendo objects. 
+</p>
+
+
 
 
 
