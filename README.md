@@ -38,6 +38,12 @@ Os desafio em JavaScript serão mostrados nessa sessão, pode ser que alguns des
 Neste projeto, criamos uma pequena aplicação com Java Script, para a conversão de moedas, apliquei conhecimentos como function, objetcs e a manipulação de elementos HTML via JavaScript.
 </p>
 
+#### <a href="https://github.com/dionialves/DevClub/tree/main/JS%20-%20Desafio%2005">JS - Desafio 05 - Sorteio de Numeros</a>
+
+<p>
+Para este projeto usei alguns recursos da biblioteca Math do JavaScript para formular um numero ramdomico e retornar ao cliente.
+</p>
+
 
 
 
