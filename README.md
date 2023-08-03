@@ -32,17 +32,21 @@ Os desafios de CSS incluem o desenvolvimento de 3 projetos basico usando apenas 
 Os desafio em JavaScript serão mostrados nessa sessão, pode ser que alguns desses projetos sejam separados em repositórios, devido a sua complexidade. Abaixo vou listar cada projeto com um breve resumo do mesmo.
 </p>
 
+<br/>
 #### <a href="https://github.com/dionialves/currency-conversion">JS - Desafio 04 - Conversor de Moeda</a>
 
 <p>
 Neste projeto, criamos uma pequena aplicação com Java Script, para a conversão de moedas, apliquei conhecimentos como function, objetcs e a manipulação de elementos HTML via JavaScript.
 </p>
-
+<img src="https://github.com/dionialves/DevClub/blob/main/JS%20-%20Desafio%2004/img/project.png" width="500">
+<br/>
 #### <a href="https://github.com/dionialves/DevClub/tree/main/JS%20-%20Desafio%2005">JS - Desafio 05 - Sorteio de Numeros</a>
 
 <p>
 Para este projeto usei alguns recursos da biblioteca Math do JavaScript para formular um numero ramdomico e retornar ao cliente.
 </p>
+<img src="https://github.com/dionialves/DevClub/blob/main/JS%20-%20Desafio%2005/assets/project.png" width="500">
+<br/>
 
 #### <a href="https://github.com/dionialves/DevClub/tree/main/JS%20-%20Desafio%2006">JS - Desafio 06 - Pesquisa de Contato</a>
 
@@ -56,7 +60,7 @@ laços como, <b>For, For of, For in, while, do while</b> e <b>forEach</b>. Mas p
 pois percoria facilmente uma lista contendo objects. 
 </p>
 
-
+<img src="https://github.com/dionialves/DevClub/blob/main/JS%20-%20Desafio%2006/assets/project.png">
 
 
 
