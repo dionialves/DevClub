@@ -32,8 +32,8 @@ Os desafios de CSS incluem o desenvolvimento de 3 projetos basico usando apenas 
 <p>
 Os desafio em JavaScript serão mostrados nessa sessão, pode ser que alguns desses projetos sejam separados em repositórios, devido a sua complexidade. Abaixo vou listar cada projeto com um breve resumo do mesmo.
 </p>
-
 <br/>
+
 #### <a href="https://github.com/dionialves/currency-conversion">JS - Desafio 04 - Conversor de Moeda</a>
 
 <p>
@@ -41,6 +41,7 @@ Neste projeto, criamos uma pequena aplicação com Java Script, para a conversã
 </p>
 <img src="https://github.com/dionialves/DevClub/blob/main/JS%20-%20Desafio%2004/img/project.png" width="500">
 <br/>
+
 #### <a href="https://github.com/dionialves/DevClub/tree/main/JS%20-%20Desafio%2005">JS - Desafio 05 - Sorteio de Numeros</a>
 
 <p>
