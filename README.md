@@ -63,6 +63,14 @@ pois percoria facilmente uma lista contendo objects.
 </p>
 
 <img src="https://github.com/dionialves/DevClub/blob/main/JS%20-%20Desafio%2006/assets/project.png">
+<br/>
 
+#### <a href="https://github.com/dionialves/DevClub/tree/main/JS%20-%20Desafio%2006">JS - Desafio 07 - Jokenpô</a>
+
+<p>
+Este game simula o conhecido Jokenpô, ou como chamamos no Brasil o Pedra, Papel e Tesoura. Ampliei meus conhecimento na manipulação da DOM, fluxo de controle com IF e ELSE e FOR. Mas o principal ganho foi na refatoração do codigo, depois do projeto pronto e funcional começei a organizar o codigo, a trocar trechos longos de codigo por outros mais simples e com mesmo resultado, separei trechos longos e que realizavam várias tarefas por funções, com o intuito de deixar cada função fazendo apenas uma atividade.
+</p>
+
+<img src="https://github.com/dionialves/jokenpo/blob/main/assets/project.png">
 
 
