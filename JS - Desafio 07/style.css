@@ -35,6 +35,11 @@ h1 {
     opacity: 1;
 }
 
+.class-assistant-img-human-player {
+    width: 110px;
+    opacity: 1;
+}
+
 .human-player {
     width: 360px;
     padding: 20px;
@@ -42,20 +47,11 @@ h1 {
     border-radius: 10px;
 }
 
-#points-human-player {
-
-}
-
 #options-human-player {
     display: flex;
     flex-direction: column;
     align-items: end;
 }
-
-#name-human-player {
-
-}
-
 
 .vs {
     display: flex;
@@ -92,7 +88,7 @@ h1 {
     align-items: flex-end;
 }
 
-.information {
+#information {
     text-align: center;
     font-weight: 400;
     font-size: 40px;
