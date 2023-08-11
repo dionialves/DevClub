@@ -86,3 +86,24 @@ pude observar o poder que NODE + EXPRESS tem, e já pude imaginar aplicações m
 <img src="https://github.com/dionialves/DevClub/blob/main/NODE%20-%20Desafio%2008/project.png">
 <br/>
 
+#### <a href="https://github.com/dionialves/DevClub/tree/main/NODE%20-%20Desafio%2009">NODE - Desafio 09 - Hamburgueria</a>
+
+<p>
+Avançando nos estudos com NODE e do framework EXPRESS, criei uma nova aplicação para processar requisições dos pedidos dos cliente, claro, apenas o processamento das requisições
+no back-end. Nesta aplicação temos as seguintes rotas:
+</p>
+
+- `POST /order`: Para criar um pedido, contendo nome do cliente, pedido e valor
+- `GET /order`: Para retornar a lista dos pedidos
+- `PUT /order/:id`: Para atualizar um pedido específico, levando como parametro o ID
+- `DELETE /order/:id`: Deletar um pedido, levando como parametro o ID
+- `GET /order/:id`: Mostrar um pedido específico
+- `PATCH /order/:id`: Alterar o status de um pedido, de "Em preparação" para "Pronto"
+
+<p>
+Foi adicionado também duas middlewares, uma para validar se o ID passado existe e outro para imprimir no console a URL e o METHOD utilizado, claro essa ultima apenas para funs didáticos.
+</p>
+
+
+<img src="https://github.com/dionialves/DevClub/blob/main/NODE%20-%20Desafio%2009/project.png">
+<br/>
