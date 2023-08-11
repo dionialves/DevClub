@@ -72,5 +72,17 @@ Este game simula o conhecido Jokenpô, ou como chamamos no Brasil o Pedra, Papel
 </p>
 
 <img src="https://github.com/dionialves/jokenpo/blob/main/assets/project.png"  width="500">
+<br/>
 
+#### <a href="https://github.com/dionialves/DevClub/tree/main/NODE%20-%20Desafio%2008">NODE - Desafio 08 - CRUD</a>
+
+<p>
+Neste projeto estou estudando sobre NODE, e fiquei surpreso de como gostei de trabalhar com o backend, acredito que irei direcionar minha carreira para trabalhar com o backend.
+Neste desafio, comecei a trabalhar com o framework express e pude capturar informações no front-end e manipular uma varivel, que esta fazendo o papel do banco de dados. Com as 
+operações de criar, ler, atualizar e deletar (CRUD), pude manipular essa variável. Para o front-end começei a utilizar o insomnia, que facilita muito o trabalho. Com este projeto
+pude observar o poder que NODE + EXPRESS tem, e já pude imaginar aplicações mais complexas com essas ferramentas.
+</p>
+
+<img src="https://github.com/dionialves/DevClub/blob/main/NODE%20-%20Desafio%2008/project.png">
+<br/>
 
