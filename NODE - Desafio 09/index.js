@@ -11,8 +11,8 @@ let customerOrder = []
 
 const printLog = ((request, response, next) => {
     console.log(`Url: ${request.url} | Method: ${request.method}`)
-    next()
-})
+    next();
+}) 
 
 const checkUserId = ((request, response, next) => {
     const { id } = request.params
