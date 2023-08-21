@@ -1,4 +1,5 @@
 import React from "react";
+import People from "./assets/people.svg"
 import { 
   Container, 
   Image,
@@ -15,7 +16,7 @@ function App() {
   return (
     <Container>
     
-      <Image/>
+      <Image src={People}/>
 
       <Main>
         <H1></H1>
