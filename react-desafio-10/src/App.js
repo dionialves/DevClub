@@ -1,43 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import People from "./assets/people.svg"
 import Arrow from "./assets/arrow.svg"
-import { 
-  Container, 
+import Trash from "./assets/trash.svg"
+import {
+  Container,
   Image,
   Main,
   H1,
   Label,
   Input,
-  Button
+  Button,
+  Users
 } from "./style.js";
 
+
 function App() {
-  const users = [
-    {id: Math.random(), name: "Dioni Alves", age: 35},
-    {id: Math.random(), name: "Rozana", age: 36},
-    {id: Math.random(), name: "Heitor", age: 10}
-  ]
+  const [users, setUsers] = useState([])
+
+
+  const addNewUser = () => {
+    setUsers([{id: Math.random(), name: "Dioni Alves", age: 35}])
+  }
 
   return (
     <Container>
-    
-        <Image src={People} alt="logo-people"/>
+
+      <Image src={People} alt="logo-people" />
 
       <Main>
         <H1>Olá!</H1>
 
         <Label>Name</Label>
-        <Input/>
+        <Input />
 
         <Label>Idade</Label>
         <Input />
 
-        <Button>Cadastrar <img alt="Arrow" src={Arrow}/> </Button>
+        <Button onClick={addNewUser}>Cadastrar <img alt="Arrow" src={Arrow} /> </Button>
 
         <ul>
-        {users.map((user) => (
-          <li key={user.id}>{user.name} - {user.age}</li>
-        ))}    
+          {users.map((user) => (
+            <Users key={user.id}>
+              <p>{user.name}</p>
+              <p>{user.age} anos</p>
+              <button><img src={Trash}  alt="trash"/></button>
+            </Users>
+          ))}
         </ul>
       </Main>
     </Container>
