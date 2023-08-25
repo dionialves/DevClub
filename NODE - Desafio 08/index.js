@@ -1,14 +1,16 @@
-// Importa o framework express ea biblioteca uuid para criação de IDs dinamicos
-const express = require('express')
-const uuid = require('uuid')
+// Importa o framework express e biblioteca uuid para criação de IDs dinamicos
+const express = require('express');
+const uuid = require('uuid');
+const cors = require('cors');
 
 // Cria uma variável contendo o framework e define uma variavel para conter a
 // porta que será usado por ele
-const app = express()
-const port = 3000
+const app = express();
+const port = 3001;
 
 // Informa ao express que ele vai trabalhar apenas com JSON
-app.use(express.json())
+app.use(express.json());
+app.use(cors());
 
 // Lista de usuários simulando um banco de bados
 // lembrando que essa aplicação é para fins eduacionais
