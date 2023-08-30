@@ -5,13 +5,13 @@ import { useHistory } from "react-router-dom"
 import Avatar from "../../assets/avatar.svg"
 import Arrow from "../../assets/arrow.svg"
 import Trash from "../../assets/trash.svg"
+import H1 from "../../componets/Title"
+import Button from "../../componets/Button"
+import Main from "../../componets/Main"
 
 import {
   Container,
   Image,
-  Main,
-  H1,
-  Button,
   ListUsers
 } from "./style.js";
 
@@ -46,7 +46,7 @@ function Users() {
 
       <Image src={Avatar} alt="logo-people" />
 
-      <Main>
+      <Main isBlur={true}>
         <H1>Usuário</H1>
         
         <ul>
@@ -61,7 +61,7 @@ function Users() {
           ))}
         </ul>
 
-        <Button onClick={goBack}><img alt="Arrow" src={Arrow} /> Voltar </Button>
+        <Button onClick={goBack} isGoBack={true}><img alt="Arrow" src={Arrow} /> Voltar </Button>
 
       </Main>
     </Container>
