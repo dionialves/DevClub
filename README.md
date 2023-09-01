@@ -107,3 +107,29 @@ Foi adicionado também duas middlewares, uma para validar se o ID passado existe
 
 <img src="https://github.com/dionialves/DevClub/blob/main/NODE%20-%20Desafio%2009/project.png">
 <br/>
+
+#### <a href="https://github.com/dionialves/DevClub/tree/main/NODE%20-%20Desafio%2009">REACT - Desafio 10 - Lista de Usuários</a>
+
+<p>
+Este é o primeiro projeto que realizo em react, neste projeto simples consegui identificar o quanto esse framework é podero no controle da pagina, como posso criar e reaproveitar linhas de codigos com
+componentes e como misturar javascript com CSS, esse ultimo achei incrivel. Abaixo algumas considerações:
+</p>
+
+- Aprendi a criar um projeto react e colocar uma pequena pagina com HTML e CSS online;
+- Entendi a estrutura de pastas e arquivos criados inicialmente no projeto;
+- Esse projeto tem duas paginas, onde separei em pastas diferentes com sua index e style;
+- Entendi como funciona o conseito de componentes e sua reutilização no codigo;
+- Styled components é simplesmente incrivel e fornece recursos importantes no controle da pagina;
+- Entendi de forma basica como o react-router-dom funciona, e pude implementar as rotas para as duas paginas;
+- E por ultimo, interliguei essa aplicação frontend com o backend criado no projeto 08 desse repositório
+
+
+<p>
+Aprendi muito com esse projeto de estudo, claro tudo de forma muito basica, mas não tive grandes dificuldades em entender os conceitos por traz do framework, o que me deixa muito enpolgado para me aprofundar
+dele, o que farei nos proximos projetos.
+</p>
+
+
+<img src="https://github.com/dionialves/DevClub/blob/main/react-desafio-10/src/assets/project01.png" width="45%" >
+<img src="https://github.com/dionialves/DevClub/blob/main/react-desafio-10/src/assets/project02.png" width="45%" text-align="left">
+<br/>
