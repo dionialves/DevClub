@@ -2,8 +2,142 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #000;    
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  gap: 27px;
+  background: #000;  
+  min-height: 100vh;
+  height: 100%;
+}
 
+h1 {
+  color: #FFF;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wrapper {
+  width: 342px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #EEE;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 122.222% */
+  letter-spacing: -0.408px;
+  margin: 42px 0 0 20px ; 
+}
+
+input {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 18px 0 18px 20px;
+
+
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  outline: none;
+}
+
+.btn-new-order {
+  display: flex;
+  width: 342px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  background: #D93856; 
+  margin-top: 76px;
+
+  color: #FFF;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.5px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-new-order:hover {
+  opacity: .9;
+}
+
+.btn-new-order:active {
+  opacity: .7;
+}
+
+.btn-go-back {
+  display: flex;
+  width: 342px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.14);
+  margin-top: 76px;
+
+  color: #FFF;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.5px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-go-back:hover {
+  opacity: .9;
+}
+
+.btn-go-back:active {
+  opacity: .7;
+}
+
+.orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  
+  padding: 15px;
+  margin-top: 18px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.order-client {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.client-name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

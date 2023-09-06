@@ -1,13 +1,14 @@
 const express = require("express");
 const uuid = require("uuid")
+const cors = require("cors")
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
-app.use(express.json())
+app.use(express.json());
+app.use(cors());
 
-
-let customerOrder = []
+let customerOrder = [];
 
 const printLog = ((request, response, next) => {
     console.log(`Url: ${request.url} | Method: ${request.method}`)
