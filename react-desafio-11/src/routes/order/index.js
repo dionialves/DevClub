@@ -6,20 +6,18 @@ import LogoOrder from '../../assets/logo-pedido.png';
 import axios from 'axios';
 
 
-const Home = () => {
-  const { orders, setOrders } = useState([]);
+const Order = () => {
+  const [orders, setOrders] = useState([]);
   const navigate = useNavigate();
 
-  useEffect = (() => {
+  useEffect(() => {
     const fetctOrders = async () => {
       const { data } = await axios.get("http://localhost:3001/order")
 
       setOrders(data)
-      console.log(data)
     }
     fetctOrders();
   }, []);
-
 
   return (
 
@@ -31,24 +29,17 @@ const Home = () => {
 
       <div className='wrapper'>
 
-        {orders?.map((order) => (
-          order.id
+        {orders.map((order) => (
+          <>
+            <div className='orders'>
+              <div className='order-client' key={order.id}>
+                <p>{ order.order }</p>
+                <p className='client-name'>{ order.clientName }</p>
+              </div>
+              <a href='#'> <img src={Trash} /> </a>
+            </div>
+          </>
         ))}
-        <div className='orders'>
-          <div className='order-client'>
-            <p>1 Coca-Cola, 1 X-Salada</p>
-            <p className='client-name'>Dioni Alves</p>
-          </div>
-          <a href='#'> <img src={Trash} /> </a>
-        </div>
-
-        <div className='orders'>
-          <div className='order-client'>
-            <p>1 Coca-Cola, 1 X-Salada</p>
-            <p className='client-name'>Dioni Alves</p>
-          </div>
-          <a href='#'> <img src={Trash} /> </a>
-        </div>
 
         <a href={`/`} className='btn-go-back'>Voltar</a>
 
@@ -57,4 +48,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Order;

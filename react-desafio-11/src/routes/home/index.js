@@ -19,9 +19,7 @@ const Home = () => {
         clientName: clientName.current.value
       }
     )
-
     history('/orders');
-
   }
 
   return (
